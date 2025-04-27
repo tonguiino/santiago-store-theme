@@ -5,9 +5,10 @@
 }
 
 .container--shelfTitle {
-  color: #727273;
+  color: #000000;
   justify-content: center;
   text-align: center;
+  font-weight: bold;
 }
 
 .headingLevel2--shelfTitle {
@@ -86,5 +87,28 @@
 
   .container--title .paragraph {
     line-height: 1.3em;
+  }
+}
+
+.container--footer-text {
+  color: aliceblue;
+  text-align: center;
+}
+
+.wrapper--footer {
+  width: 100%;
+}
+
+.paragraph--footer {
+  color: #ffffff;
+}
+
+.container--titlebrand {
+  color: #000000;
+}
+@media screen and (max-width:376px) {
+  .heading--titlebrand {
+
+    font-size: larger;
   }
 }

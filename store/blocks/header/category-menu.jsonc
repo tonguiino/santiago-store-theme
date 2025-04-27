@@ -1,0 +1,146 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "flex-layout.row#menu"
+    ]
+  },
+  "flex-layout.row#menu": {
+    "children": [
+      "menu-item#category-apparel",
+      "menu-item#mujer",
+      "menu-item#category-junior",
+      "menu-item#more",
+      "menu-item#Accesorios",
+      "menu-item#Ofertas"
+    ],
+    "props": {
+      "blockClass": "contenedor-menu"
+    }
+  },
+  "menu-item#category-apparel": {
+    "props": {
+      "blockClass": "menu-itm",
+      "id": "menu-item-category-apparel",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/test---test",
+        "noFollow": false,
+        "tagTitle": "Hombre",
+        "text": "Hombre "
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-apparel"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-apparel": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-apparel"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-apparel": {
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "menu-item#mujer": {
+    "props": {
+      "blockClass": "menu-itm",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/test---test",
+        "noFollow": false,
+        "tagTitle": "Mujer",
+        "text": "Mujer"
+      }
+    }
+  },
+
+  "menu-item#category-home": {
+    "props": {
+      "blockClass": "menu-itm",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/test---test",
+        "noFollow": false,
+        "tagTitle": "Mujer",
+        "text": "Mujer"
+      }
+    }
+  },
+  "menu-item#category-junior": {
+    "props": {
+      "blockClass": "menu-itm",
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/test---test",
+        "noFollow": false,
+        "tagTitle": "Junior",
+        "text": "Junior"
+      }
+    }
+  },
+  "menu-item#more": {
+    "props": {
+      "blockClass": "menu-itm",
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/test---test",
+        "noFollow": true,
+        "tagTitle": "Niños",
+        "text": "Niños"
+      }
+    }
+  },
+  "menu-item#Accesorios": {
+    "props": {
+      "blockClass": "menu-itm",
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/test---test",
+        "noFollow": true,
+        "tagTitle": "Accesorios",
+        "text": "Accesorios"
+      }
+    }
+  },
+  "menu-item#Ofertas": {
+    "props": {
+      "blockClass": "menu-itm-2",
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/test---test",
+        "noFollow": true,
+        "tagTitle": "Ofertas",
+        "text": "Ofertas"
+      }
+    }
+  }
+}

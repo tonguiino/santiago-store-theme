@@ -10,3 +10,8 @@
   color: #0067C7;
   font-size: .875rem;
 }
+
+.searchBarContainer {
+  display: flex;
+  align-items: center;
+}

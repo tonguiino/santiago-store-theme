@@ -1,11 +1,21 @@
-.row--menu-row {
-  padding-right: 24px;
-}
-
 .row--menu-row .rowContainer {
-  align-items: flex-start;
+  align-items: center;
 }
 
 .row--payment-methods {
   padding-top: 16px;
+}
+
+.footerLayout--container-footer {
+  background-color: #000000;
+
+}
+
+@media screen and (max-width: 426px) {
+  .footerLayout--container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
 }

@@ -1,22 +1,25 @@
 {
   "footer": {
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
   },
   "footer-layout.desktop": {
+    "props": {
+      "rowGap": 8,
+      "blockClass": "container-footer"
+    },
     "children": [
       "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-desktop",
       "flex-layout.row#footer-3-desktop"
     ]
   },
   "flex-layout.row#footer-1-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
+      "vtex.menu@2.x:menu#Politicas",
+      "vtex.menu@2.x:menu#footer-Aboutus",
+      "flex-layout.col#social"
     ],
     "props": {
       "blockClass": "menu-row",
@@ -24,7 +27,19 @@
       "paddingBottom": 3
     }
   },
-
+  "flex-layout.col#social": {
+    "children": [
+      "rich-text#social-networks",
+      "social-networks"
+    ],
+    "props": {}
+  },
+  "rich-text#social-networks": {
+    "props": {
+      "blockClass": "footer-text",
+      "text": "### SÍGUENOS EN:"
+    }
+  },
   "social-networks": {
     "props": {
       "socialNetworks": [
@@ -33,12 +48,12 @@
           "url": "https://www.facebook.com/vtexonline/"
         },
         {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
-        },
-        {
           "name": "Twitter",
           "url": "https://twitter.com/vtexonline"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
         },
         {
           "name": "Youtube",
@@ -47,40 +62,37 @@
       ]
     }
   },
-
-  "flex-layout.row#footer-2-desktop": {
-    "children": ["accepted-payment-methods"],
-    "props": {
-      "blockClass": "payment-methods"
-    }
-  },
-  "accepted-payment-methods": {
-    "props": {
-      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
-    }
-  },
-
   "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer"],
+    "children": [
+      "rich-text#footer"
+    ],
     "props": {
+      "horizontalAlign": "center",
+      "fullWidth": false,
       "blockClass": "credits"
     }
   },
   "rich-text#footer": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
+      "textAlignment": "CENTER",
+      "text": "&copy; copyright Colombia. Todos los derechos reservados",
       "blockClass": "footer"
     }
   },
-
   "footer-layout.mobile": {
+    "props": {
+      "blockClass": "container-footer"
+    },
     "children": [
       "flex-layout.row#1-footer-mobile",
-      "flex-layout.row#2-footer-mobile"
+      "flex-layout.row#2-footer-mobile",
+      "rich-text#footer-mobile"
     ]
   },
   "flex-layout.row#2-footer-mobile": {
-    "children": ["flex-layout.col#footer-1-mobile"],
+    "children": [
+      "flex-layout.col#footer-1-mobile"
+    ],
     "props": {
       "blockClass": "payment-methods",
       "paddingTop": 4,
@@ -90,8 +102,7 @@
   "flex-layout.col#footer-1-mobile": {
     "children": [
       "accepted-payment-methods",
-      "social-networks",
-      "rich-text#footer-mobile"
+      "flex-layout.col#social"
     ],
     "props": {
       "blockClass": "payment-methods",
@@ -103,13 +114,16 @@
   "flex-layout.row#1-footer-mobile": {
     "props": {
       "paddingTop": 4,
-      "paddingBottom": 4
+      "paddingBottom": 4,
+      "blockClass": "mobil-footer"
     },
-    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+    "children": [
+      "vtex.menu@2.x:menu#footer-mobile"
+    ]
   },
   "rich-text#footer-mobile": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
+      "text": "&copy; copyright Colombia. Todos los derechos reservados",
       "blockClass": "footer"
     }
   }

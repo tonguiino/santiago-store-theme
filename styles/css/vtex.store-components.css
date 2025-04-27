@@ -6,6 +6,20 @@
   text-decoration: underline;
 }
 
+.searchBarIcon {
+  background-color: #dedede;
+}
+
+.autoCompleteOuterContainer {
+  background-color: #e6f1e6;
+}
+
+
+.searchIcon {
+  color: #000000;
+}
+
+
 .infoCardContainer--info-card-home {
   max-width: 1520px;
   margin: 0 auto;
@@ -69,15 +83,19 @@
   .newsletter .container {
     padding: 140px;
   }
+
   .label {
-     font-size: 40px;
+    font-size: 40px;
   }
+
   .infoCardContainer--info-card-home .infoCardTextContainer {
     width: 30%;
   }
+
   .infoCardContainer--info-card-home .infoCardImageContainer {
     width: 70%;
   }
+
   .imageElement--storePrint {
     margin-bottom: 0px;
     max-height: 600px;
@@ -110,4 +128,16 @@
 
 .image {
   image-rendering: -webkit-optimize-contrast;
+}
+
+.sellingPrice {
+  color: #6a10ae;
+  font-weight: bold;
+}
+
+@media screen and (max-width:426px) {
+  .imageElement--img1 {
+    margin-bottom: 40px;
+  }
+
 }

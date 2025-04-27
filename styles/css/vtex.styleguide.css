@@ -1,0 +1,26 @@
+.input {
+    background-color: #eeeeee;
+    width: 30em;
+  }
+  
+
+  @media screen and (max-width: 426px) {
+    .input {
+      width: 100%;
+    }
+  }
+  
+ 
+  @media screen and (max-width: 376px) {
+    .input {
+      width: 270px;
+    }
+  }
+
+  @media screen and (max-width: 321px) {
+    .input {
+      width: 218px;
+    }
+  }
+  
+

@@ -1,29 +1,30 @@
 {
   "store.home": {
     "blocks": [
+      "banner-countdown",
       "list-context.image-list#demo",
+      "flex-layout.row#img",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "flex-layout.row#deals",
       "__fold__",
       "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "flex-layout.row#shelf-summary"
     ]
   },
-
+  "banner-countdown":{
+    
+  },
   "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+    "children": [
+      "slider-layout#demo-images"
+    ],
     "props": {
       "height": 570,
       "preload": true,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+          "image": "https://experimentality.vtexassets.com/assets/vtex.file-manager-graphql/images/2bcde293-94fb-469f-b620-36ac9b5df11d___d2d519c4c2f8249fcedce3e82b73e6d3.jpg",
+          "mobileImage": "https://experimentality.vtexassets.com/assets/vtex.file-manager-graphql/images/0a4e9b38-a760-4981-8dca-edd867a1b4a9___e280b6c6eeb6953145785d68b2ea4466.jpg"
         },
         {
           "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
@@ -44,21 +45,45 @@
       "blockClass": "carousel"
     }
   },
-
+  "flex-layout.row#img": {
+    "props": {
+      "marginTop": 8
+    },
+    "children": [
+      "image#img1",
+      "image#img2"
+    ]
+  },
+  "image#img1": {
+    "props": {
+      "src": "https://experimentality.vtexassets.com/assets/vtex.file-manager-graphql/images/1a4d4ba8-c7ea-4344-8913-2dc8bbd2b1d8___252c7dc487a7200d07a610ceb8b0a9a3.jpg",
+      "maxWidth": "90%",
+      "maxHeight": "auto",
+      "blockClass": "img1"
+    }
+  },
+  "image#img2": {
+    "props": {
+      "src": "https://experimentality.vtexassets.com/assets/vtex.file-manager-graphql/images/7384c617-f933-426f-b8b9-3203e8b7c2eb___60d901b78250258eebe79c77c0e1db7c.jpg",
+      "maxWidth": "90%",
+      "maxHeight": "auto"
+    }
+  },
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## PRODUCTOS MÁS BUSCADOS",
       "blockClass": "shelfTitle"
     }
   },
-  "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
-  },
   "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "collection": "192"
     }
   },
   "slider-layout#demo-products": {
@@ -73,32 +98,55 @@
       "blockClass": "shelf"
     }
   },
-
-  "info-card#home": {
+  "flex-layout.row#shelf-summary": {
+    "children": [
+      "list-context.product-list#summary"
+    ],
+    "props": {}
+  },
+  "list-context.product-list#summary": {
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
+      "collection": "192",
+      "maxItems": 50
+    },
+    "children": [
+      "slider-layout#slider-productos"
+    ],
+    "blocks": [
+      "product-summary.shelf#items"
+    ]
+  },
+  "product-summary.shelf#items": {
+    "children": [
+      "product-summary-image",
+      "flex-layout.col#info-summary"
+    ]
+  },
+  "flex-layout.col#info-summary": {
+    "children": [
+      "product-summary-name",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ],
+    "props": {
+      "blockClass":"info-summary"
     }
   },
-
-  "rich-text#question": {
+  "slider-layout#slider-productos": {
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "shelf"
     }
   },
-
-  "rich-text#link": {
+  "product-summary-buy-button": {
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
+      "blockClass": "buy-button"
     }
   }
 }

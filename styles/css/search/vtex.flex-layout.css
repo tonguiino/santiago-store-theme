@@ -32,3 +32,10 @@
 .flexCol--summaryUpDetailsListMobile {
   margin-bottom: 0.25rem
 }
+.flexCol--info-summary{
+  background-color: #f4f4f4;
+  padding: 0px 30px;
+  height: 100%;
+  justify-content: center;
+}
+

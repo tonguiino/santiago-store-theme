@@ -1,4 +1,5 @@
-.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround, .skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
+.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround,
+.skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
   border-radius: 50%;
 }
 
@@ -31,6 +32,9 @@
 
 .container {
   text-align: start;
+  border: 1px solid #2E2E2E;
+  border-radius: 0px;
+  height: 32em;
 }
 
 .imageContainer {
@@ -39,4 +43,31 @@
 
 .image {
   border-radius: 0.25rem;
+}
+
+.buyButtonContent {
+  background-color: #000000;
+}
+
+.element {
+  padding: 0;
+}
+
+.priceContainer {
+  align-items: flex-start;
+}
+.buyButtonText--buy-button{
+  font-size: 12px;
+}
+
+.buyButtonText--buy-button::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/9341/9341730.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
 }

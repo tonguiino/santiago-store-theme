@@ -4,6 +4,7 @@
 }
 
 @media screen and (min-width: 40em) {
+
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
     padding: 0 1rem;
@@ -11,6 +12,7 @@
 }
 
 @media screen and (min-width: 80rem) {
+
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
     padding: 0 0.25rem;
@@ -23,13 +25,14 @@
 }
 
 .flexRowContent--main-header {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 }
 
 .flexRowContent--main-header-mobile {
   align-items: center;
   padding: 0.625rem 0.5rem;
   background-color: #f0f0f0;
+  flex-wrap: wrap;
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
@@ -95,4 +98,50 @@
 
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
+}
+
+.flexRow--contenedor-menu {
+  background-color: #151515;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-end;
+}
+.flexRowContent--main-header{
+  background-color: #ffffff;
+  padding: 4rem;
+}
+.flexRowContent--menu-row{
+  padding: 1rem 8rem;
+  justify-content: center;
+}
+.flexRow--credits{
+  display: flex;
+  border-top: 1px solid grey;
+  width: 98%;
+  margin: auto;
+}
+.flexRow--searh{
+  display: flex;
+  align-items: center;
+}
+.flexColChild--logo{
+  display: flex;
+
+}
+
+.flexRowContent--contenedor-menu{
+display: flex;
+justify-content: flex-end;
+}
+@media screen and (max-width: 426px) {
+
+  .flexRow--mobil-footer{
+    width: 90%;
+  }
+  .flexColChild--payment-methods{
+    width: 320px;
+  }
+
 }
