@@ -39,3 +39,12 @@
   justify-content: center;
 }
 
+@media screen and (max-width:426px) {
+  .flexCol--info-summary{
+
+    padding: 0px 10px;
+    height: 100%;
+
+  }
+}
+

@@ -1,25 +1,26 @@
 .input {
     background-color: #eeeeee;
     width: 30em;
+    box-sizing: border-box;
   }
   
 
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 428px) {
     .input {
-      width: 100%;
+      max-width: 280px; 
     }
   }
   
  
   @media screen and (max-width: 376px) {
     .input {
-      width: 270px;
+      max-width: 250px;
     }
   }
 
   @media screen and (max-width: 321px) {
     .input {
-      width: 218px;
+      max-width: 208px;
     }
   }
   

@@ -71,3 +71,11 @@
   background-repeat: no-repeat;
   margin-right: 10px;
 }
+@media screen and (max-width: 426px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 30em;
+    width: 10em;
+  }
+}
