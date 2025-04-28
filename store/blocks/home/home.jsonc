@@ -75,17 +75,6 @@
       "blockClass": "shelfTitle"
     }
   },
-  "list-context.product-list#demo1": {
-    "blocks": [
-      "product-summary.shelf"
-    ],
-    "children": [
-      "slider-layout#demo-products"
-    ],
-    "props": {
-      "collection": "192"
-    }
-  },
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {

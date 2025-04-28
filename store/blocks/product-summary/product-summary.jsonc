@@ -12,13 +12,7 @@
     "children": ["product-rating-inline"]
   },
 
-  "stack-layout#prodsum": {
-    "children": [
-      "product-summary-image#shelf",
-      "vtex.product-highlights@2.x:product-highlights#collection",
-      "modal-trigger#quickview" // Check quickview.jsonc
-    ]
-  },
+
 
   "product-summary-image#shelf": {
     "props": {
@@ -51,18 +45,7 @@
       "blockClass": "summary"
     }
   },
-  "flex-layout.row#selling-price-savings": {
-    "props": {
-      "colGap": 2,
-      "preserveLayoutOnMobile": true,
-      "preventHorizontalStretch": true,
-      "marginBottom": 4
-    },
-    "children": [
-      "product-selling-price#summary",
-      "product-price-savings#summary"
-    ]
-  },
+
   "product-installments#summary": {
     "props": {
       "blockClass": "summary"

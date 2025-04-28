@@ -16,6 +16,13 @@
     justify-content: center;
     width: 100%;
 }
+.styledLinkContainer--menu-itm-2 {
+    border: none;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    width: 100%;
+}
 
 .styledLinkContent--menu-itm {
     color: #ffffff;
