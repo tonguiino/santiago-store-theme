@@ -133,7 +133,7 @@
 
 .flexRowContent--contenedor-menu{
 display: flex;
-justify-content: flex-end;
+justify-content: center;
 }
 @media screen and (max-width: 426px) {
 
