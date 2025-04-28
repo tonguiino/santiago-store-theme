@@ -5,6 +5,7 @@
 .styledLinkContent--mn-item {
     color: #ffffff;
 }
+
 .styledLinkContent--footer-text {
     color: #ffffff;
 }
@@ -16,6 +17,7 @@
     justify-content: center;
     width: 100%;
 }
+
 .styledLinkContainer--menu-itm-2 {
     border: none;
     display: flex;
@@ -25,11 +27,13 @@
 }
 
 .styledLinkContent--menu-itm {
+    font-weight: bold;
     color: #ffffff;
 }
 
 .styledLinkContent--menu-itm-2 {
     color: #ffffff;
+    font-weight: bold;
 }
 
 
@@ -63,6 +67,7 @@
         margin-left: 2.5em;
         justify-content: flex-start;
     }
+
     .styledLinkContainer--menu-itm-2 {
         width: 100%;
         margin-left: 2.5em;
@@ -72,11 +77,13 @@
         color: #000000;
         font-weight: bolder;
     }
+
     .styledLinkContent--menu-itm-2 {
         color: #000000;
         font-weight: bolder;
     }
-    .styledLinkContent--footer-text{
+
+    .styledLinkContent--footer-text {
         margin-bottom: 17px;
         padding-bottom: 20px;
         border-bottom: 1px solid white;
